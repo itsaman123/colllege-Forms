@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        .forms {
+            /* background-color: rgb(136, 173, 173); */
+            height: 400px;
+            width: 400px;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 130px 450px;
+        }
+        fieldset{
+            background-color: rgb(178, 208, 208);
+        }
+        legend{
+            color: red;
+        }
+
+        form {
+            margin-top: 70px;
+        }
+
+        form h1 {
+            text-align: center;
+        }
+
+        form #name {
+            margin: 10px;
+        }
+
+        form button {
+            height: 30px;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        button {
+            margin-left: 30px;
+        }
+
+        button a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="forms">
+        <fieldset>
+            <legend><b>Log in form<b>></legend>
+            <form action="submit">
+                <h1>Log in </h1>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="enter name"> <br>
+                <label for="password">Password</label>
+                <input type="text" id="password" placeholder="enter password"> <br> <br>
+                <!-- <a href="registration.html"><Button>Submit</Button></a> -->
+                <button onclick="alert('Your form is submitted, Now move to the next page')"><a
+                        href="registration.html">submit</a> </button>
+                <a href="/"><Button>Reset</Button></a>
+
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>
