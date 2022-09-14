@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Hey!</p>
+    
+</body>
+<script>
+    var food="<food> <fruites>"+
+        "<name>Apple</name>"+
+        "<color>red</color>"+
+        " </food></fruites> "
+
+//     var parser,xmlDom;
+//     parser =new DOMParser();
+//     xmlDom=parser.parseFromString(food,'text/xml');
+//     document.getElementById('para').innerHTML=
+// xmlDom.getElementsByTagName('color')[0].childNodes[0].nodeValue;
+
+var x=xmlDom.documentElement.childNode;
+var text="";
+for(var i=0;i<x.length;i++)
+{
+    if(x[i].nodeType==1){
+        text=text + x[i].nodeName +"<br>"
+    }
+}
+
+
+</script>
+</html>
